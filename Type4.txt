@@ -1,0 +1,95 @@
+ 
+ Description:
+Many time-related phrases are inherently ambiguous, meaning their interpretation depends on context.
+The goal is to generate ambiguous time expressions and provide at least two possible interpretations, each within a different context.
+Common ambiguous phrases include: "this weekend," "early next month," "later on," "in a few days," etc.
+🎯 Requirements:
+Generate 10 ambiguous time expressions.
+For each phrase, provide at least two different contextual interpretations.
+Include a question that asks about the meaning of the phrase in a specific context.
+📤 Output Format:
+plaintext
+
+Phrase: "[Ambiguous time phrase]"
+Interpretation 1:
+  Context: [Description of the first context]
+  Meaning: [How the phrase is interpreted in this context]
+Interpretation 2:
+  Context: [Description of the second context]
+  Meaning: [How the phrase is interpreted in this context]
+Question: "What does '[time phrase]' mean in [Context 1]?"
+ Few-shot Examples:
+plaintext
+
+Phrase: "This weekend"
+Interpretation 1:
+  Context: In a work email, "this weekend" usually means Saturday and Sunday.  
+  Meaning: Saturday and Sunday.  
+Interpretation 2:
+  Context: In casual conversation, "this weekend" may also include Friday evening.  
+  Meaning: Friday evening through Sunday.  
+Question: "What does 'this weekend' mean in a work email?"  
+
+Phrase: "Early next month"
+Interpretation 1:
+  Context: When discussing salary payments, "early next month" often refers to the first 5 days of the month.  
+  Meaning: The 1st–5th of the month.  
+Interpretation 2:
+  Context: When scheduling an event, "early next month" could mean any time before the 10th.  
+  Meaning: The 1st–10th of the month.  
+Question: "How would 'early next month' be interpreted in the context of salary payments?"  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Prompt 2: Context-Dependent Time Interpretation
+ Description:
+Some time-related expressions are highly dependent on context for their exact meaning.
+The goal is to generate phrases that require interpretation based on context.
+ Requirements:
+Generate 10 time-related expressions that can be interpreted differently based on context.
+Provide at least two different contexts for each phrase and explain the possible meanings.
+Include a question that asks how the phrase should be understood in a given context.
+ Output Format:
+plaintext
+
+Phrase: "[Time-related phrase]"
+Context 1:
+  Description: [Brief description of the situation]
+  Interpretation: [What time duration this phrase refers to]
+Context 2:
+  Description: [Brief description of another situation]
+  Interpretation: [What time duration this phrase refers to in this context]
+Question: "In [Context 1], what does '[Time-related phrase]' mean?"
+ Few-shot Examples:
+plaintext
+
+Phrase: "Will be done soon"
+Context 1:
+  Description: In a fast-paced work environment, "soon" often means within a few hours.  
+  Interpretation: 2-4 hours.  
+Context 2:
+  Description: In academic research, "soon" could mean within a few weeks.  
+  Interpretation: 1-3 weeks.  
+Question: "What does 'will be done soon' mean in a fast-paced work environment?"  
+
+Phrase: "Get back later"
+Context 1:
+  Description: When a customer service agent says "I'll get back to you later," it typically means within the same day.  
+  Interpretation: 1-8 hours.  
+Context 2:
+  Description: When a friend says "I'll get back to you later," it might mean within a few days.  
+  Interpretation: 2-5 days.  
+Question: "If a customer service agent says 'I'll get back later,' when should you expect a response?"  

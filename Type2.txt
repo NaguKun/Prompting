@@ -1,0 +1,34 @@
+Generate 10 realistic event sequences where events have clear causal relationships.
+
+Each example should include:
+- **Context:** A short scenario description.
+- **Events:** A list of 3-4 ordered events, where one event leads to another.
+- **Two questions:**
+  1. **Ordering Question:** Which event happened first?
+  2. **Causal Reasoning Question:** Which event caused another event to occur?
+
+Ensure diversity across domains (e.g., daily life, scientific processes, historical events, mechanical failures).
+Provide the output in the following structured format:
+
+---
+**Example 1:**
+**Context:** John missed the bus because he woke up late.
+**Events:** 1. John’s alarm didn’t go off. → 2. He woke up late. → 3. He rushed but missed the bus. → 4. He arrived late to work.
+**Q1:** Which event happened first: "John rushed but missed the bus" or "John’s alarm didn’t go off"?
+**Q2:** What was the main cause of John arriving late to work?
+
+---
+**Example 2:**
+**Context:** The power outage caused delays in the factory.
+**Events:** 1. A thunderstorm damaged power lines. → 2. The factory lost power. → 3. Machines stopped working. → 4. Production was delayed.
+**Q1:** Which event occurred first: "The factory lost power" or "Machines stopped working"?
+**Q2:** What caused the factory to lose power?
+
+---
+**Example 3:**
+**Context:** A student failed the exam due to poor preparation.
+**Events:** 1. The student didn’t study regularly. → 2. They struggled with practice tests. → 3. They were unprepared for the final exam. → 4. They failed the exam.
+**Q1:** Which event happened first: "They failed the exam" or "They struggled with practice tests"?
+**Q2:** What was the main reason for the student failing the exam?
+
+Generate 10 such examples with clear causal relationships.
