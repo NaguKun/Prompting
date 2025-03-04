@@ -1,62 +1,63 @@
-## 1.1. Arithmetic
-"Create training questions that require performing calculations with time. Each question must:
+# 1. Mathematical Temporal Reasoning
 
-Have exact numerical values and time units (hours, days, weeks, months, years)
-Require summation, subtraction, multiplication, division, or unit conversion
-Include real-world scenarios (work schedules, travel time, study plans)
-Vary in complexity (from simple to multi-step calculations)
-Occasionally involve special cases (e.g., converting 60 minutes into 1 hour)
-Provide clear context to motivate problem-solving
-Only provide the questions and context, do not include answers."
+## 1.1. Arithmetic
+**"Create training questions that require performing calculations with time. Each question must:**  
+- Contain exact numerical values and time units (hours, days, weeks, months, years).  
+- Require operations such as addition, subtraction, multiplication, division, or unit conversion.  
+- Include real-world scenarios (work schedules, travel time, study plans).  
+- Have varying levels of complexity (from simple to multi-step problems).  
+- Occasionally include calculations requiring special handling (e.g., converting 60 minutes to 1 hour).  
+- Provide clear context to motivate problem-solving.  
+
+**Only provide the question and context, without giving the answer."**  
 
 ## 1.2. Duration
-"Create training questions about calculating the time interval between two points. Each question must:
+**"Create training questions about calculating the duration between two points in time. Each question must:**  
+- Clearly state two specific time points with full details (date, hour, minute if necessary).  
+- Require calculating the duration in the appropriate unit (hours, days, weeks, months, years).  
+- Include various situations: within a day, across days, across months, and across years.  
+- Address special cases: leap years, time zone conversions, daylight saving changes.  
+- Provide real-world contexts: flight schedules, working hours, vacations, project deadlines.  
+- Require precise calculations (to the day, hour, and minute) in some cases.  
+- Add complexity with holidays, weekends, and work hours.  
 
-Clearly state two specific time points with full date, hour, and minute (if necessary)
-Require calculating the duration in appropriate units (hours, days, weeks, months, years)
-Cover various scenarios: time within a day, across days, across months, and across years
-Include special cases: leap years, time zone conversions, daylight saving time changes
-Provide real-world contexts: flight schedules, work hours, vacations, project deadlines
-Require precise calculations (to the exact day, hour, minute) in some cases
-Introduce complexity such as holidays, weekends, and business hours
-Only provide questions with full details and context, do not include answers."
+**Only provide the question with full details and context, without giving the answer."**  
 
 ## 1.3. Frequency
-"Create training questions about the frequency of events within a time period. Each question must:
+**"Create training questions about the frequency of an event occurring within a given period. Each question must:**  
+- Clearly describe the frequency of the event (every 15 minutes, once every 3 days, weekly on Tuesday).  
+- Specify a concrete time range (from date/time X to date/time Y).  
+- Require calculating the total occurrences of the event within the given period.  
+- Include real-world scenarios: medication schedules, workout plans, meeting schedules, equipment maintenance.  
+- Cover special cases: events skipping holidays/weekends.  
+- Include complex frequencies: every 10th and 25th of the month, first Monday of the month.  
+- Introduce constraints and exceptions: skipping holidays, changing schedules in specific cases.  
 
-Clearly describe the event frequency (every 15 minutes, once every 3 days, weekly on Tuesdays)
-Define a specific time range (from which date/hour to which date/hour)
-Require calculating the total number of occurrences within that period
-Include real-world scenarios: medication schedules, workout plans, meeting schedules, equipment maintenance
-Incorporate special cases: events not occurring on holidays/weekends
-Include complex frequencies: on the 10th and 25th of each month, on the first Monday of the month
-Add constraints and exceptions: not occurring on public holidays, schedule changes in certain cases
-Only provide questions with full details and context, do not include answers."
+**Only provide the question with full details and context, without giving the answer."**  
 
 ## 1.4. Time Shift
-"Create training questions about calculating a new time point after a time shift. Each question must fall into one of the following categories:
+**"Create training questions about calculating time after a shift. Each question must belong to one of the following types:**  
 
-Short-term shifts:
+### Short-Term Shift:
+- Ranges from a few hours to a few days.  
+- Clear initial time point (specific date, hour, and minute).  
+- Real-world contexts: assignment deadlines, meeting times, delayed flight schedules.  
 
-Changes ranging from a few hours to a few days
-Clearly defined initial time point (specific date, hour, minute)
-Real-world scenarios: assignment deadlines, meeting times, flight delays
-Medium-term shifts:
+### Medium-Term Shift:
+- Ranges from weeks to months.  
+- Deals with month changes, quarter transitions, and seasonal shifts.  
+- Real-world contexts: project timelines, school schedules, contract deadlines.  
 
-Changes spanning a few weeks to a few months
-Handling month transitions, quarter shifts, seasonal changes
-Real-world contexts: project planning, academic schedules, contract deadlines
-Long-term shifts:
+### Long-Term Shift:
+- Spans multiple years.  
+- Considers leap years, decade changes, and century transitions.  
+- Real-world contexts: long-term planning, multi-year contracts, age and milestone events.  
 
-Changes spanning multiple years
-Considering leap years, decade/century shifts
-Contexts: long-term planning, multi-year contracts, age and milestone events
-Month/year-based shifts:
+### Month/Year Shift:
+- Adjusts by full months or years.  
+- Handles special cases: January 31st + 1 month = ?  
+- Applied in financial planning, contracts, anniversaries.  
 
-Adjusting by full months or years
-Handling special cases: January 31 + 1 month = ?
-Applications: financial scenarios, contracts, anniversaries
-Each question must have a specific starting time, a clear time shift, and require determining the new time point. Introduce complexity such as time zones, lunar/solar calendars, or special rules where applicable.
+Each question must include a specific initial time point, a clear time shift, and require determining the new time. Complexity may include time zones, lunar/solar calendars, or special rules where applicable.  
 
-Only provide questions with full details and context, do not include answers."
-
+**Only provide the question with full details and context, without giving the answer."**  
